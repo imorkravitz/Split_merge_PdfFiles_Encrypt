@@ -2,8 +2,8 @@ import fitz
 import os
 from collections import defaultdict
 
-owner_pass = "AzUyT67U4$xZ098Pl%1Mxq3"  # owner password
-user_pass = "AzUyT67U4$xZ098Pl%1Mxq3"  # user password
+owner_pass = "/*****"  # owner password
+user_pass = "/*****"  # user password
 encrypt_meth = fitz.PDF_ENCRYPT_AES_256  # strongest algorithm
 
 perm = int(
@@ -59,8 +59,8 @@ def merge_pdfs(source_folder, destination_folder):
 print('Merge complete!')
 
 # define the source and destination folders
-source_folder = "/Users/orkravitz/Downloads/ProtectMyPDF/merge_source/"
-destination_folder = "/Users/orkravitz/Downloads/ProtectMyPDF/merge_dest/"
+source_folder = "/*****/"
+destination_folder = "/*****"
 # merge the PDF files in the source folder and save the result to the destination folder
 merge_pdfs(source_folder, destination_folder)
 
