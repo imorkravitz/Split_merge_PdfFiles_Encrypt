@@ -3,8 +3,8 @@ import PyPDF2
 import os
 
 # Set the source and destination folders
-source_folder = '/Users/orkravitz/Downloads/ProtectMyPDF/split_source'
-destination_folder = '/Users/orkravitz/Downloads/ProtectMyPDF/split_dest'
+source_folder = "*****"
+destination_folder = "*****"
 
 # Iterate through the files in the source folder
 for filename in os.listdir(source_folder):
