@@ -13,5 +13,8 @@ this project split PDF merged pdf files and encrypt merged files
 
 Python 3.10
 
+Libraries:
+-
 PyPDF2: pip install PyPDF2==2.2.1
+-
 PyMuPDF: pip install PyMuPDF
