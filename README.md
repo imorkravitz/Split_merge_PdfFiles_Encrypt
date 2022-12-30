@@ -18,3 +18,4 @@ Libraries:
 PyPDF2: pip install PyPDF2==2.2.1
 -
 PyMuPDF: pip install PyMuPDF
+-
