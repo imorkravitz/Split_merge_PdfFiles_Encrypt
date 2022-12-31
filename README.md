@@ -19,3 +19,44 @@ PyPDF2: pip install PyPDF2==2.2.1
 -
 PyMuPDF: pip install PyMuPDF
 -
+
+
+***********
+-
+In order to execute script using mac:
+-
+in the directory: library/launchdaemons/
+
+add .plist file
+
+_
+Format:
+_
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.example.program1</string>
+    <key>Program</key>
+    <string>/path/to/program1</string>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+  </dict>
+</plist>
+
+
+save and put in the directroy.
+
+-
+then open Terminal and do this:
+-
+1. sudo chown root:wheel /Library/LaunchDaemons/myfile.plist
+2. sudo chmod 600 /Library/LaunchDaemons/myfile.plist
+
+and execute command:
+
+sudo launchctl load /library/launchdaemons/myfile.plist
+
+***********
