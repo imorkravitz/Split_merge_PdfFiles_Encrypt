@@ -53,7 +53,6 @@ which corn >> will show the path and by finder>> Go >> find the file and drag to
 --
 The Script for the 3 programs:
 --
-* * * * *  /Library/Frameworks/Python.framework/Versions/3.10/bin/python3 /Users/orkravitz/dev/Pdf_Split_Merge_Encryp/PDF_Split_and_Merge/SplitPdfFiles.py
-* * * * * sleep 5;/usr/bin/java -cp /Users/orkravitz/dev/Pdf_Encrypt_Watermarks/PDF_Watermarks/lib/Spire.Pdf.jar /Users/orkravitz/dev/Pdf_Encrypt_Watermarks/PDF_Watermarks/src/EncryptPDF.java
-* * * * * sleep 5;/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 /Users/orkravitz/dev/Pdf_Split_Merge_Encryp/PDF_Split_and_Merge/MergePdfFiles_Encrypt.py
+![image](https://user-images.githubusercontent.com/63398613/210372458-bf820ecd-589b-460f-a287-16f7f1f2f009.png)
+
 
