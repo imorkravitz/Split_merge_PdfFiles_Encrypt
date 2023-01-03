@@ -23,41 +23,37 @@ PyMuPDF: pip install PyMuPDF
 
 ***********
 -
-In order to execute script using mac:
--
-in the directory: library/launchdaemons/
-
-add .plist file
-
-_
-
-Format:
+crontab -e
 -
 
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-  <dict>
-    <key>Label</key>
-    <string>com.example.program1</string>
-    <key>Program</key>
-    <string>/path/to/program1</string>
-    <key>StartInterval</key>
-    <integer>3600</integer>
-  </dict>
-</plist>
+in Terminal:
+
+* crontab -e
+* press i
+* write the script
+* ese button
+* then press :qw in order to exit end save the script
+* in crontab -l , can see the new crontab installed
 
 
-save and put in the directroy.
 
 -
-then open Terminal and do this:
+In order to allow mac use corn
 -
-1. sudo chown root:wheel /Library/LaunchDaemons/myfile.plist
-2. sudo chmod 600 /Library/LaunchDaemons/myfile.plist
+go to apple settings >> Security & Privacy >> Privacy >> Full Disk Access 
+![image](https://user-images.githubusercontent.com/63398613/210371553-717b5d1c-2547-4a42-9785-4f88f8b604b8.png)
 
-and execute command:
+allow corn and smbd and Terminal
 
-sudo launchctl load /library/launchdaemons/myfile.plist
+in Terminal:
+which corn >> will show the path and by finder>> Go >> find the file and drag to the Privacy area in the Security & Privacy
 
-***********
+
+
+--
+The Script for the 3 programs:
+--
+* * * * *  /Library/Frameworks/Python.framework/Versions/3.10/bin/python3 /Users/orkravitz/dev/Pdf_Split_Merge_Encryp/PDF_Split_and_Merge/SplitPdfFiles.py
+* * * * * sleep 5;/usr/bin/java -cp /Users/orkravitz/dev/Pdf_Encrypt_Watermarks/PDF_Watermarks/lib/Spire.Pdf.jar /Users/orkravitz/dev/Pdf_Encrypt_Watermarks/PDF_Watermarks/src/EncryptPDF.java
+* * * * * sleep 5;/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 /Users/orkravitz/dev/Pdf_Split_Merge_Encryp/PDF_Split_and_Merge/MergePdfFiles_Encrypt.py
+
