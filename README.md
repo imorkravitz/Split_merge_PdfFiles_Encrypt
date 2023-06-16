@@ -32,7 +32,7 @@ in Terminal:
 * press i
 * write the script
 * ese button
-* then press :qw in order to exit end save the script
+* then press :wq! in order to exit end save the script
 * in crontab -l , can see the new crontab installed
 
 
